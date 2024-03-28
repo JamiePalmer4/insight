@@ -1,0 +1,327 @@
+/*--Navigational Element Styling--*/
+.navbar-brand{
+    padding-top: 5px;
+}
+
+.navbar{
+    font-family: 'PT Sans', sans-serif;
+    font-size: 18px;
+    background-color: #FFFFFF;
+    color: #F9F6EE;
+    padding: 16px;
+    margin-right: 10px;
+    border-bottom: 2px solid #E8E8E8;
+}
+
+.nav-item{
+    margin: 4px;
+}
+
+@media (max-width: 900px) {
+    .navbar-toggle {
+        display: block;
+    }
+}
+
+
+.page-section-title-vision-test{
+    font-size: 32px;
+    font-family: 'Roboto', sans-serif;
+    margin-top: 20px;
+    color: #333333;
+    
+}
+
+.page-section-text-vision-test{
+    font-size: 24px;
+    font-family: 'Lato', sans-serif;
+    padding-right: 160px;
+    padding-left: 160px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    color: #333333;
+    overflow: hidden;
+}
+@media (max-width: 840px)
+{
+    .page-section-text-vision-test{
+        padding-right: 50px;
+        padding-left: 50px;
+        
+    }
+    .page-section-title-vision-test{
+        margin-top: 40px;
+    }
+}
+/*--Start Test Button and Hover--*/
+#start-test-button{
+    font-family: 'Figtree', sans-serif;
+    text-decoration: none;
+    display: inline-block;
+    border: none;
+    margin: 2px 10px;
+    cursor: pointer;
+    font-size: 22px;
+    background-color: #333333;
+    border-radius: 6px;
+    color: #FFFFFF;
+    width: 260px;
+}
+
+#start-test-button:hover {
+    background-color: #636363;
+}
+
+/*--Test Container which stores the content for the Test--*/
+#quiz-container{
+    padding: 20px;
+    width: 80%;
+    margin: 0 auto;
+    height: 300px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    overflow: auto;
+}
+
+@media (max-width: 760px)
+{
+    #quiz-container{
+        width: 100%;
+        height: auto;
+        border-radius: 0px;
+    }
+}
+
+.page-section-title-quiz-name{
+    font-size: 32px;
+    font-family: 'Roboto', sans-serif;
+    margin-top: 20px;
+}
+
+.answer-button {
+        font-family: 'Figtree', sans-serif;
+        text-decoration: none;
+        display: inline-block;
+        border: none;
+        margin: 2px 10px;
+        margin-top: 60px;
+        cursor: pointer;
+        font-size: 22px;
+        background-color: #333333;
+        border-radius: 6px;
+        color: #FFFFFF;
+        width: 260px;
+        
+        }
+
+        .answer-button:hover {
+            background-color: #636363;
+        }
+
+@media (max-width: 840px)
+{
+    .answer-button{
+        margin-top: 20px;
+    }
+}
+
+#answer-options{
+    display: flex;
+    justify-content: center;
+    
+}
+
+@media (max-width: 840px)
+{
+    #answer-options{
+        display: inline-block;
+    }
+    
+}
+
+
+/*--Result Container which displays the recommendation for the user--*/
+#result-container{
+    padding: 20px;
+    margin: 0 auto;
+    height: auto;  
+}
+
+.page-section-title-vision-test-result{
+    font-size: 32px;
+    font-family: 'Roboto', sans-serif;
+    margin-left: 40px;
+    margin-right: 40px;
+    margin-bottom: 40px;
+}
+
+.page-section-title-assessment-result{
+    font-size: 26px;
+    font-family: 'Lato', sans-serif;
+    margin-left: 100px;
+    margin-right: 100px;
+}
+
+
+#assistance-container{
+    padding: 20px;
+    width: 80%;
+    margin: 0 auto;
+    height: 300px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    overflow: scroll;
+    
+}
+
+@media (max-width: 760px)
+{
+    #assistance-container{
+        width: 100%;
+        height: auto;
+        border-radius: 0px;
+    }
+}
+
+/*--First Section of Text regarding Vision Test--*/
+.page-section-title-assistance{
+    font-size: 32px;
+    font-family: 'Roboto', sans-serif;
+    overflow: scroll;
+}
+
+.page-section-text-assistance{
+    font-size: 18px;
+    font-family: 'Lato', sans-serif;
+    margin-left: 40px;
+    margin-right: 40px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    color: #000000;
+    text-align: left;
+    overflow: scroll;
+}
+
+
+@media (max-width: 1000px)
+{
+    .page-section-text-assistance{
+        text-align: center;
+    }
+}
+
+.page-section-text-assistance:hover{
+    color: #636363;
+}
+
+.page-section-title-contact-us{
+    overflow: scroll;
+    font-size: 32px;
+    font-family: 'Roboto', sans-serif;
+}
+
+.page-section-text-contact-us{
+    overflow: scroll;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+/*--Footer Elements--*/
+
+.page-footer{
+    background-color: #333333;
+    color: #FFFFFF;
+}
+
+.page-section-title-footer{
+    font-family: 'Montserrat', sans-serif;
+    padding-left: 50px;
+    padding-right: 50px;
+    margin-bottom: 15px;
+}
+    
+
+.page-section-text-footer{
+    font-family: 'Poppins', sans-serif;
+    padding-left: 50px;
+    padding-right: 50px;
+    margin-top: 5px;
+    margin-bottom: 20px;
+}
+
+.page-section-text-footer-pdf{
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+.page-section-text-footer-pdf a{
+    display: inline-block; 
+    margin-right: 10px;
+    text-decoration: none;
+    color: #333
+}
+
+.page-section-text-copyright{
+    padding-left: 50px;
+    padding-right: 50px;
+    margin-top: 40px;
+    margin-bottom: 60px;
+}
+
+@media (max-width: 840px)
+{
+    .page-section-text-copyright{
+        display: none;
+    }
+}
+
+
+
+.page-section-title-quick-link{
+    font-family: 'Montserrat', sans-serif;
+    padding-left: 50px;
+    padding-right: 50px;
+    margin-bottom: 15px;
+}
+
+.page-section-text-quick-link{
+    font-family: 'Poppins', sans-serif;
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+/*--Quick Link Colour--*/
+
+a:link {
+  color: #FFFFFF;
+  background-color: transparent;
+  text-decoration: none;
+}
+a:visited {
+  color: #FFFFFF;
+  background-color: transparent;
+  text-decoration: none;
+}
+a:hover {
+  color: #FFFFFF;
+  background-color: transparent;
+  text-decoration: underline;
+}
+
+/*--Hidden Container Element--*/
+#copyright, #hiddenContainer{
+    display: none;
+    
+}
+
+@media (max-width: 840px)
+{
+    #copyright, #hiddenContainer{
+        display: contents;
+        
+    }
+}

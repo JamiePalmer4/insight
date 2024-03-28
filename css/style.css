@@ -1,0 +1,275 @@
+/*--Navigational Element Styling--*/
+.navbar-brand{
+    padding-top: 5px;
+}
+
+.navbar{
+    font-family: 'PT Sans', sans-serif;
+    font-size: 18px;
+    background-color: #FFFFFF;
+    color: #F9F6EE;
+    padding: 16px;
+    margin-right: 10px;
+}
+
+
+.nav-item{
+    margin: 4px;
+}
+
+@media (max-width: 900px) {
+    .navbar-toggle {
+        display: block;
+        
+    }
+}
+
+
+/*--Full Width Video Styling--*/
+.autoplay-video{
+    width: 100%;
+    object-fit: fill;
+}
+
+@media only screen and (max-width: 800px) {
+  .autoplay-video {
+    height: auto;
+  }
+}
+
+/*--First Section of Text regarding Vision Test--*/
+.page-section-title-vision{
+    font-size: 32px;
+    font-family: 'Roboto', sans-serif;
+    
+}
+
+.page-section-text-vision{
+    font-size: 18px;
+    font-family: 'Lato', sans-serif;
+    margin-left: 100px;
+    margin-right: 100px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+#gettingStartedButton{
+    font-family: 'Figtree', sans-serif;
+    margin-top: 20px;
+    margin-bottom: 60px;
+    font-size: 24px;
+}
+
+/*--Vision Test Image--*/
+#visionTest{
+    width: 80%;
+    height: 300px;
+    margin-top: 30px; 
+    margin-bottom: 50px;
+}
+
+@media (max-width: 840px)
+{
+    #visionTest{
+        height: 300px;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+}
+
+
+/*--Second Section of Text regarding Eye Conditions--*/
+#fixed-image {
+    background-image: url(/images/eyeBackground.jpg);
+    height: 500px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    
+}
+@media (max-width: 640px)
+{
+    #fixed-image{
+        height: 600px;
+    }
+}
+
+
+.page-section-title-eye-conditions{
+    font-size: 32px;
+    font-family: 'Roboto', sans-serif;
+    margin-top: 80px;
+    color: #FFFFFF;
+    
+}
+
+.page-section-text-eye-conditions{
+    font-size: 18px;
+    font-family: 'Lato', sans-serif;
+    padding-right: 120px;
+    padding-left: 120px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    color: #FFFFFF;
+    overflow: hidden;
+}
+@media (max-width: 840px)
+{
+    .page-section-text-eye-conditions{
+        padding-right: 50px;
+        padding-left: 50px;
+        
+    }
+    .page-section-title-eye-conditions{
+        margin-top: 40px;
+    }
+}
+
+
+/*--Vision Test Image--*/
+#visionChallenges{
+    width: 80%;
+    height: 300px;
+    margin-top: 30px; 
+    margin-bottom: 50px;
+}
+
+@media (max-width: 840px)
+{
+    #visionChallenges{
+        height: 300px;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+}
+
+
+.page-section-title-challenges{
+    font-size: 32px;
+    font-family: 'Roboto', sans-serif;
+    margin-top: 10px;
+    
+}
+
+.page-section-text-challenges{
+    font-size: 18px;
+    font-family: 'Lato', sans-serif;
+    margin-left: 100px;
+    margin-right: 100px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+/*--Footer Elements--*/
+
+.page-footer{
+    background-color: #333333;
+    color: #FFFFFF;
+}
+
+.page-section-title-footer{
+    font-family: 'Montserrat', sans-serif;
+    padding-left: 50px;
+    padding-right: 50px;
+    margin-bottom: 15px;
+    font-size: 18px;
+}
+    
+
+.page-section-text-footer{
+    font-family: 'Poppins', sans-serif;
+    padding-left: 50px;
+    padding-right: 50px;
+    margin-top: 5px;
+    margin-bottom: 20px;
+    font-size: 16x;
+}
+
+.page-section-text-footer-pdf{
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+    padding-left: 50px;
+    padding-right: 50px;
+    font-size: 16px;
+}
+
+.page-section-text-footer-pdf a{
+    display: inline-block; 
+    margin-right: 10px;
+    text-decoration: none;
+    color: #333
+}
+
+.page-section-text-copyright{
+    padding-left: 50px;
+    padding-right: 50px;
+    margin-top: 40px;
+    margin-bottom: 60px;
+    font-size: 18px;
+}
+
+@media (max-width: 840px)
+{
+    .page-section-text-copyright{
+        display: none;
+    }
+}
+
+
+
+.page-section-title-quick-link{
+    font-family: 'Montserrat', sans-serif;
+    padding-left: 50px;
+    padding-right: 50px;
+    margin-bottom: 15px;
+    font-size: 18px;
+}
+
+.page-section-text-quick-link{
+    font-family: 'Poppins', sans-serif;
+    padding-left: 50px;
+    padding-right: 50px;
+    font-size: 16px;
+}
+
+/*--Quick Link Colour--*/
+
+a:link {
+  color: #FFFFFF;
+  background-color: transparent;
+  text-decoration: none;
+}
+a:visited {
+  color: #FFFFFF;
+  background-color: transparent;
+  text-decoration: none;
+}
+a:hover {
+  color: #FFFFFF;
+  background-color: transparent;
+  text-decoration: underline;
+}
+
+/*--Hidden Container Element--*/
+#copyright, #hiddenContainer{
+    display: none;
+    
+}
+
+@media (max-width: 840px)
+{
+    #copyright, #hiddenContainer{
+        display: contents;
+        
+    }
+}
+
+
+
+
+
+
+
+

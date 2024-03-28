@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <!-- Favicon
+	    <link rel="icon" type="image/png" href="favicon/favicon-16x16.png" >
+        <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+        <link rel="manifest" href="favicon/site.webmanifest">
+        <link rel="mask-icon" href="favicon/safari-pinned-tab.svg" color="#ff0000">
+        <meta name="msapplication-TileColor" content="#ffffff">
+        <meta name="theme-color" content="#ffffff">
+        -->
+        
+        <title>Insight</title>
+        
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=yes">
+    
+        <!--Bootstrap 4.5.2 Include via CDN-->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    
+    </head>
+<body>
+<nav class="navbar navbar-expand-md navbar-darK">
+        <h1 class="navbar-brand">
+            <a href="index.html"><img src="images/logo.png" alt="Logo" width="" height="60"></a>
+        </h1>
+
+        <button aria-label="Close" class="navbar-toggler navbar-light" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+
+        <div class="collapse navbar-collapse justify-content-end navbar-light" id="collapsibleNavbar">   
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class= "nav-link" href="index.html" alt="Home Page">Home</a>
+                </li>
+
+                <li class="nav-item active">
+                    <a class= "nav-link" href="visionCheck.html" alt="About Page">Vision Check</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class= "nav-link" href="conditions.html" alt="Characters Page">Common Eye Conditions </a>
+                </li>
+
+                <li class="nav-item">
+                    <a class= "nav-link" href="visualChallenges.html" alt="Visual Challenges Page">Visual Challenges</a>
+                </li>
+                        
+                <li class="nav-item">
+                    <a class= "nav-link" href="contactUs.html" alt="Contact Us Page">Contact Us</a>
+                </li>
+            </ul>
+        </div>
+</nav>
+
+<div class="page-section-spacing" style="background-color: #ffffff">
+    <p>&ensp;</p>
+    <p>&ensp;</p>
+</div>    
+
+<!-------------------------------------------------------------->
+    
+<!--Vision Test Questions and Answer Buttons which are displayed when the button is pressed-->
+<div id="quiz-container" class="container-fluid text-center" style="background-color: #D6CFD7; display: none;">
+    <div class="row text-center">
+        <div class="col-lg-12 col-md-12 col-sm-12 col-12">
+            <h2 class="page-section-title-quiz-name" id="question-name"></h2>
+        </div>
+    </div>
+    
+    <div class="row justify-content-center">
+        <div id="answer-options" class="col-lg-10 col-md-12 col-sm-12 col-12">
+            <!-- Buttons for answer options -->
+            <button class="answer-button" onclick="checkAnswer(0)">Answer 1</button>
+            <button class="answer-button" onclick="checkAnswer(1)">Answer 2</button>
+            <button class="answer-button" onclick="checkAnswer(2)">Answer 3</button>
+            <button class="answer-button" onclick="checkAnswer(3)">Answer 4</button>
+        </div>
+    </div>
+</div>
+
+<!-------------------------------------------------------------->
+
+<!--Vision Test Result, displays after completion of the text-->
+<div id="result-container" class="container-fluid text-center" style="display: none; border-bottom: 2px solid #E8E8E8;">
+    <div class="row text-center">
+        <div class="col-lg-12 col-md-12 col-sm-12 col-12">
+            <h2 class="page-section-title-vision-test-result">Vision Test Results</h2>
+        </div>
+    </div>
+    
+    
+    <div class="row text-center">
+        <div class="col-lg-12 col-md-12 col-sm-12 col-12">
+            <p id="assessment-result" class="page-section-title-assessment-result" style="margin-bottom: 40px;"></p>
+        </div>
+    </div>
+</div>
+
+<!-------------------------------------------------------------->
+    
+<!--Vision Page Content upon arrival-->
+<div id="start-container" class="container-fluid text-center" style="border-bottom: 2px solid #E8E8E8;">
+    <div class="row text-center" style="">
+            <div class="col-lg-12 col-md-12 col-sm-12 col-12">
+                <h2 class="page-section-title-vision-test">
+                    <strong>Vision Test</strong>
+                </h2>
+            </div>
+    </div>
+
+    <div class="row text-center" style="">
+        <div class="col-lg-12 col-md-12 col-sm-12 col-12">
+            <p class="page-section-text-vision-test">
+               Take our Vision Test to gain an insight into how your eye health is. The assessment analyses your responses and makes a recommendation to determine whether an appointment at an opticians is necessary. Making sure your eye health is optimal ensures no problems later on down the line, ensuring your vision is clear. 
+            </p>
+        </div>
+    </div>
+    
+    <button id="start-test-button" style="margin-bottom: 80px;" onclick="startTest()">Start Test</button>
+</div>
+
+<!-------------------------------------------------------------->
+    
+   
+    
+<div id="assistance-container" class="container-fluid" style="margin-top: 60px; background-color: #D6DFE7;">
+    <div class="row text-center">
+        <div class="col-lg-6 col-md-12 col-sm-12 col-12">
+            <h2 class="page-section-title-assistance" style="margin-top: 20px; margin-bottom: 20px;">
+                <strong>
+                    Need Assistance?
+                </strong>
+            </h2>
+            <a href="https://www.rnib.org.uk" target="_blank">
+                <p class="page-section-text-assistance underline"><u>
+                    RNIB - Royal National Institute of Blind People
+                </u></p>
+            </a>
+            
+            <a href="https://www.partsight.org.uk" target="_blank">
+                <p class="page-section-text-assistance underline"><u>
+                    The Partially Sighted Society - Seeing the way forward together
+                </u></p>
+            </a>
+            
+            <a href="https://www.look-uk.org" target="_blank">
+                <p class="page-section-text-assistance underline"><u>
+                   Look UK - Supporting visually impaired young people to thrive
+                </u></p>
+            </a>
+        </div>        
+        
+        <div class="col-lg-6 col-md-12 col-sm-12 col-12">
+            <h2 class="page-section-title-contact-us" style="margin-top: 20px; margin-bottom: 20px;">
+                <strong>
+                    Contact Us
+                </strong>
+            </h2>
+            
+            <!--Icons Provived by Iconmonstr https://iconmonstr.com-->
+            <p class="page-section-text-contact-us">
+                    <a href="https://www.facebook.com" target="_blank"><svg xmlns="http://www.w3.org/2000/svg" style="margin-right: 10px;" width="60" height="60" viewBox="0 0 24 24"><path d="M12 0c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm3 8h-1.35c-.538 0-.65.221-.65.778v1.222h2l-.209 2h-1.791v7h-3v-7h-2v-2h2v-2.308c0-1.769.931-2.692 3.029-2.692h1.971v3z"/></svg></a>
+                
+                    <a href="mailto:j.palmer2934@gmail.com"><svg xmlns="http://www.w3.org/2000/svg" style="margin-right: 10px;" width="60" height="60" viewBox="0 0 24 24" fill-rule="evenodd" clip-rule="evenodd"><path d="M12 0c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm0 2c5.514 0 10 4.486 10 10s-4.486 10-10 10-10-4.486-10-10 4.486-10 10-10zm5.144 14.5h-10.288c-.472 0-.856-.384-.856-.856v-6.788c0-.472.384-.856.856-.856h10.288c.472 0 .856.384.856.856v6.788c0 .472-.384.856-.856.856zm-5.144-3.043l-4.671-3.241-.01 5.784h9.342v-5.784l-4.661 3.241zm4.435-4.957h-8.895l4.46 3.115s3.126-2.203 4.435-3.115z"/></svg></a>
+                
+                    <a href="https://www.instagram.com" target="_blank"><svg xmlns="http://www.w3.org/2000/svg" style="margin-right: 10px;" width="60" height="60" viewBox="0 0 24 24"><path d="M14.829 6.302c-.738-.034-.96-.04-2.829-.04s-2.09.007-2.828.04c-1.899.087-2.783.986-2.87 2.87-.033.738-.041.959-.041 2.828s.008 2.09.041 2.829c.087 1.879.967 2.783 2.87 2.87.737.033.959.041 2.828.041 1.87 0 2.091-.007 2.829-.041 1.899-.086 2.782-.988 2.87-2.87.033-.738.04-.96.04-2.829s-.007-2.09-.04-2.828c-.088-1.883-.973-2.783-2.87-2.87zm-2.829 9.293c-1.985 0-3.595-1.609-3.595-3.595 0-1.985 1.61-3.594 3.595-3.594s3.595 1.609 3.595 3.594c0 1.985-1.61 3.595-3.595 3.595zm3.737-6.491c-.464 0-.84-.376-.84-.84 0-.464.376-.84.84-.84.464 0 .84.376.84.84 0 .463-.376.84-.84.84zm-1.404 2.896c0 1.289-1.045 2.333-2.333 2.333s-2.333-1.044-2.333-2.333c0-1.289 1.045-2.333 2.333-2.333s2.333 1.044 2.333 2.333zm-2.333-12c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm6.958 14.886c-.115 2.545-1.532 3.955-4.071 4.072-.747.034-.986.042-2.887.042s-2.139-.008-2.886-.042c-2.544-.117-3.955-1.529-4.072-4.072-.034-.746-.042-.985-.042-2.886 0-1.901.008-2.139.042-2.886.117-2.544 1.529-3.955 4.072-4.071.747-.035.985-.043 2.886-.043s2.14.008 2.887.043c2.545.117 3.957 1.532 4.071 4.071.034.747.042.985.042 2.886 0 1.901-.008 2.14-.042 2.886z"/></svg></a>
+            </p>
+        </div>
+    </div>
+</div>   
+
+
+<div class="page-section-spacing" style="background-color: #ffffff">
+    <p>&ensp;</p>
+    <p>&ensp;</p>
+</div> 
+    
+
+<!-- Footer -->
+<footer class="page-footer font-small pt-4">
+
+  <!-- Footer Links -->
+  <div class="container-fluid text-center text-md-center">
+
+    <!-- Grid row -->
+    <div class="row">
+
+      <!-- Grid column -->
+      <div class="col-md-6 mt-md-0 mt-3">
+
+        <!-- Content -->
+        <h5 class="page-section-title-footer text-uppercase text-md-left"><strong>Insight</strong></h5>
+        <p class="page-section-text-footer text-md-left">Caring for Your Vision. Understand your visual acuity through our vision check-up, access information about common eye conditions and challenges visual impairments cause on a daily basis, along with contact information if requiring assistance.</p>
+        
+        <div class="page-section-text-footer-pdf text-md-left">
+            <a href="privacyPolicy.pdf" target="_blank">Privacy Policy</a>
+            <a href="termsAndConditions.pdf" target="_blank">Terms of Service</a>
+            <a href="accessibilityStatement.pdf" target="_blank">Accessibility Statement</a>
+        </div>  
+        
+        <p class="page-section-text-copyright text-md-left"><strong>© 2024 Copyright Jamie Palmer</strong></p>
+
+      </div>
+      <!-- Grid column -->
+
+      <hr class="clearfix w-100 d-md-none pb-3">
+
+      <!-- Grid column -->
+
+      <!-- Grid column -->
+      <div class="col-md-6 mb-md-0 mb-3">
+
+        <!-- Links -->
+          <h5 class="page-section-title-quick-link text-uppercase text-md-right"><strong>Quick Links</strong></h5>
+
+        <ul class="page-section-text-quick-link list-unstyled text-md-right">
+            <li style="margin-bottom: 2px;">
+                <a href="index.html">Home</a>
+            </li>
+            <li style="margin-bottom: 2px;">
+                <a href="visionCheck.html">Vision Check</a>
+            </li>
+            <li style="margin-bottom: 2px;">
+                <a href="conditions.html">Common Eye Conditions</a>
+            </li>
+            <li style="margin-bottom: 2px;">
+                <a href="visualChallenges.html">Visual Challenges</a>
+            </li>
+            <li>
+                <a href="contactUs.html">Contact Us</a>
+            </li>
+        </ul>
+
+      </div>
+      <!-- Grid column -->
+
+    </div>
+    <!-- Grid row -->
+
+  </div>
+  <!-- Footer Links -->
+
+
+</footer>
+<!-- Footer -->
+
+<!-- Copyright -->
+<div id="hiddenContainer" class="container">
+    <div class="row">
+        <div class="col-md-12">
+            <div class="text-center py-3"><h5 id="copyright" class="text-md-center"><strong>© 2024 Copyright Jamie Palmer</strong></h5>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Copyright -->
+
+<!--Stylesheet-->
+<link rel="stylesheet" href="css/visionCheck.css">
+<script defer src="js/script.js"></script>
+    
+<!--Google Font's-->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Figtree&family=Lato&family=Montserrat&family=PT+Sans&family=Poppins&family=Roboto&display=swap" rel="stylesheet">
+    
+    
+</body>
+</html>
