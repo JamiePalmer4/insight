@@ -126,7 +126,7 @@ function analysisOfAnswer() {
     } else if (analysis.definitelyDisagree >= 7 || analysis.disagree >= 6) {
         recommendation = "As this is not a formal diagnosis, based on your responses, your vision seems okay. However, if you feel an appointment to your local optician is needed then you should consider scheduling an appointment. They can offer a clinical assessment and address any issues which may be effecting your eye sight, and gives you the opportunity to ask further questions with a registered optician. ";
     } else {
-        recommendation = "As this is not a formal diagnosis, based on your responses, you should consider making an appointment with your nearest optician. This way you can undergo a full examination completed by a trusted professinal, who can identify any underlying issues which you may not be aware of.";
+        recommendation = "As this is not a formal diagnosis, based on your responses, you should consider making an appointment with your nearest optician. This way you can undergo a full examination completed by a trusted professional, who can identify any underlying issues which you may not be aware of.";
     }
 
     return recommendation;
