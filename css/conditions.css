@@ -52,6 +52,12 @@
 }
 
 /*--Eye Conditions Main Section--*/
+@media only screen and (max-width: 900px){
+    .card{
+        border: none;
+        
+    }
+}
 
 
 /*--References--*/
