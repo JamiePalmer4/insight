@@ -61,17 +61,17 @@
     margin-bottom: 40px;
 }
 
-#columnOne{
+#columnOneChallenges{
     margin-left: 40px;
     margin-right: 40px;
 }
 
-#columnTwo{
+#columnTwoChallenges{
     margin-left: 40px;
     margin-right: 40px;
 }
 
-#columnThree{
+#columnThreeChallenges{
     margin-left: 40px;
     margin-right: 40px;
 }
@@ -89,6 +89,45 @@
     margin-bottom: 40px;
     
 }
+
+/*--Assistive Technologies Section--*/
+.page-section-title-assistive-technologies{
+    font-size: 32px;
+    font-family: 'Roboto', sans-serif;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+#columnOneTechnologies{
+    margin-left: 40px;
+    margin-right: 40px;
+}
+
+#columnTwoTechnologies{
+    margin-left: 40px;
+    margin-right: 40px;
+}
+
+#columnThreeTechnologies{
+    margin-left: 40px;
+    margin-right: 40px;
+}
+
+
+.page-section-title-technologies{
+    font-size: 24px;
+    font-family: 'Lato', sans-serif;
+    margin-bottom: 20px;
+}
+
+.page-section-text-technologies{
+    font-size: 18px;
+    font-family: 'Figtree', sans-serif;
+    margin-bottom: 40px;
+    
+}
+
+
 
 /*--References--*/
 .page-section-title-references{
